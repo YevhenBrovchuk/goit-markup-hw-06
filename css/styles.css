@@ -746,7 +746,7 @@ letter-spacing: 0.04em;
     color: var(--body-color);
 }
 
-.form-input-text:active + .form-lable-text,
+.form-input-text:focus + .form-lable-text,
 .form-input-text:not(:placeholder-shown) + .form-lable-text{
     transform: translateX(-56px);
     /* left:-52px */
@@ -771,7 +771,7 @@ letter-spacing: 0.04em;
     
 }
 .footer-form-btn{
-    position: relative;
+position: relative;
 min-width: 165px;
 padding-left: 24px;
 padding-right: 64px;
@@ -780,6 +780,12 @@ margin-left: 24px;
 transition: background-color var(--transit);
 background-color: var(--ferstlogo-btn-color);
 color: var(--body-color);
+}
+
+.footer-form-btn:hover, 
+.footer-form-btn:focus{
+background: var(--hover-focus-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-btn-icon{
@@ -820,6 +826,7 @@ visibility var(--transit);
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 72px 24px 24px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -859,3 +866,184 @@ visibility var(--transit);
     fill:var(--body-color);
 }
 
+.modal-text{
+    width: 100%;
+    font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--logo-nav-footer-color);
+
+      
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    border: 1px solid var(--logo-nav-footer-color);
+        border-radius: 4px;
+        font-size: 18px;
+        transition: border var(--transit);
+}
+
+.modal-form-input:placeholder-shown{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    
+    padding-left: 38px;
+}
+.modal-form-input-desc{
+    display: block;
+    font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;  
+        letter-spacing: 0.04em;
+        color: #8E8F99;
+        margin-bottom: 4px;
+}
+
+.modal-form-feild{
+    margin-bottom: 8px;
+}
+
+.modal-form-feild-message{
+    margin-bottom: 20px;
+}
+
+.modal-form-message{
+    display: block;
+    resize: none;
+    width: 100%;
+        height: 120px;
+        font-size: 18px;
+        padding-top: 8px;
+            padding-left: 16px;
+            border-radius: 4px;
+}
+
+.modal-form-message:focus{
+    outline: none;
+        border: 1px solid var(--ferstlogo-btn-color);
+}
+
+
+.modal-form-message:placeholder-shown{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+.modal-form-input-icon{
+    display: block;
+    position: relative;
+}
+
+
+
+.modal-form-icon-name{
+    position: absolute;
+    top: 11px;
+        left: 16px;
+       
+    width:18px ;
+    height: 18px;
+    fill: var(--logo-nav-footer-color);
+    transition: fill var(--transit);
+}
+
+.modal-form-icon{
+    position: absolute;
+    width: 18px;
+    height: 24px;
+    top:8px;
+    left: 16px;
+    fill:var(--logo-nav-footer-color);
+    transition: fill var(--transit);
+   
+}
+.modal-form-input:focus
+{
+    outline: none;
+    border: 1px solid var(--ferstlogo-btn-color);
+}
+.modal-form-input:focus + .modal-form-icon{
+    fill:var(--ferstlogo-btn-color);
+}
+
+.modal-form-input:focus + .modal-form-icon-name{
+fill: var(--ferstlogo-btn-color);
+}
+
+
+
+
+.modal-form-feild-link{
+    font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--ferstlogo-btn-color);
+}
+
+.modal-form-check-desc{
+    font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: #8E8F99;
+}
+
+
+
+/* .modal-form-check{
+    display:flex;
+margin-bottom: 24px;
+} */
+
+.modal-form-feild-check{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+
+.modal-form-btn-send{
+    min-width: 169px;
+    align-self: center;
+    color: var(--body-color);
+    background: var(--ferstlogo-btn-color);
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     padding: 16px 32px;
+}
+
+
+.user-polic-icon{
+    /* display: block; */
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--logo-nav-footer-color);
+        border-radius: 2px;
+        fill:transparent;
+        cursor: pointer;
+}
+.modal-form-check:checked + .user-polic-icon{
+    fill:var(--fonbtn-fonsect-logofooter-color);
+    background-color: var(--hover-focus-color);
+    border: 1px solid var(--hover-focus-color);
+}
