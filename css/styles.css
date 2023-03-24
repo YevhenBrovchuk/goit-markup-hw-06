@@ -977,6 +977,8 @@ visibility var(--transit);
 .modal-form-input:focus
 {
     outline: none;
+    color: #4D5AE5;
+    
     border: 1px solid var(--ferstlogo-btn-color);
 }
 .modal-form-input:focus + .modal-form-icon{
@@ -1037,6 +1039,7 @@ margin-bottom: 24px;
     margin-right: 8px;
     width: 16px;
     height: 16px;
+   padding: 3px 4px;
     border: 1px solid var(--logo-nav-footer-color);
         border-radius: 2px;
         fill:transparent;
@@ -1046,4 +1049,9 @@ margin-bottom: 24px;
     fill:var(--fonbtn-fonsect-logofooter-color);
     background-color: var(--hover-focus-color);
     border: 1px solid var(--hover-focus-color);
+}
+
+.test{
+    width: 10px;
+    height: 8px;
 }
